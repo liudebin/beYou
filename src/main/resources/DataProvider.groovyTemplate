@@ -1,0 +1,27 @@
+
+
+import read.write.talk.beyou.ext.groovy.DataProvider;
+import read.write.talk.beyou.ext.groovy.DataRequest;
+import java.util.List;
+import java.util.Map;
+%s
+
+public class %s implements DataProvider {
+    %s
+
+    public void validate(DataRequest request){
+        %s
+    }
+
+    public List<String> getDependencies(){
+        return %s;
+    }
+
+    public String getDataName() {
+        return "%s";
+    };
+
+    public Object handle(DataRequest request, Map<String, Object> working) {
+        %s
+    }
+}
